@@ -1,0 +1,817 @@
+🟦 ログを初期化
+🟦 ベースディレクトリ: /root/.cache/nanochat
+🟦 データセットURL BASE_URL='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main'
+🟦 データセットの最大シャードインデックス MAX_SHARD=1822
+🟦 ダウンロードするシャード数 num_files=8
+🟦 ダウンロードに使用するワーカー数 num_workers=4
+🟦 データセット保存ディレクトリ DATA_DIR='/root/.cache/nanochat/base_data'
+🟦 シャードのダウンロードを開始 index=0
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet'
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00000.parquet'
+🟦 ダウンロード試行 1/5 index=0
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00000.parquet HTTP/1.1" 302 1325
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/71b654f278c025839701a7d3b039f9322fb4dddcc90117799c7691745fd989c7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120806Z&X-Amz-Expires=3600&X-Amz-Signature=4924b5344e7d0e976f7ff743be88cbe9d693c1881cd0fa325422a4c2029f6b9e&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00000.parquet%3B+filename%3D%22shard_00000.parquet%22%3B&x-id=GetObject&Expires=1763125686&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4Nn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvNzFiNjU0ZjI3OGMwMjU4Mzk3MDFhN2QzYjAzOWY5MzIyZmI0ZGRkY2M5MDExNzc5OWM3NjkxNzQ1ZmQ5ODljNyoifV19&Signature=GrVBQf9iJsvpP1lKMNiDj-E7OPiEgXhR15IQJqtb0fwuRTWSQ-A-li7NF6xLuGzHA5865DKF1YA92szIS3novcOKIuDlgwGHrDsaOkP-PZ2oZAVirzcm75NdwR4kAX0e~HfV~8-88zwI674G9RRgNG2Lt9XqV3qrubOzapAoewL-FEKE~nDUaqbj-YKX1YgsZej6HckYi2BK04hoAhON8wRYMgnbruhviEjYHnMWvUi96ApMY1Hhy7IpkPS1XAr2y1rryZl4MvUw~fJGLdsUeemFs2crqeca1FcZ7AGBhowYuMOxbYAmoZKe5QP1T1ey5uP065pJDELhGjM7~cRrPQ__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 94511680
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00000.parquet.tmp'
+🟦 ダウンロード完了 index=0
+🟦 ダウンロードするシャードインデックス: ids_to_download=[0, 1, 2, 3, 4, 5, 6, 7]
+🟦 シャードのダウンロードを開始 index=0
+🟦 シャードのダウンロードを開始 index=1
+🟦 シャードのダウンロードを開始 index=2
+🟦 シャードのダウンロードを開始 index=3
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00002.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00003.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00001.parquet'
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00002.parquet'
+🟦 ダウンロード済みのためスキップ index=0
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00003.parquet'
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00001.parquet'
+🟦 ダウンロード試行 1/5 index=2
+🟦 ダウンロード試行 1/5 index=3
+🟦 ダウンロード試行 1/5 index=1
+🟦 シャードのダウンロードを開始 index=4
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00004.parquet'
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00004.parquet'
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 ダウンロード試行 1/5 index=4
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00004.parquet HTTP/1.1" 302 1327
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00001.parquet HTTP/1.1" 302 1323
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00003.parquet HTTP/1.1" 302 1323
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00002.parquet HTTP/1.1" 302 1321
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/ff9eaf3c2068c8ef965e50cd8fdb145837bedd4b83239c01da0262cc3550028f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120807Z&X-Amz-Expires=3600&X-Amz-Signature=6764c80ce0db3f05dafa519275252ff5ffb8e259d9ccec1f97e815ec9d62cbf6&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00004.parquet%3B+filename%3D%22shard_00004.parquet%22%3B&x-id=GetObject&Expires=1763125687&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvZmY5ZWFmM2MyMDY4YzhlZjk2NWU1MGNkOGZkYjE0NTgzN2JlZGQ0YjgzMjM5YzAxZGEwMjYyY2MzNTUwMDI4ZioifV19&Signature=jeaU7dj6dDqAKqzDnoJaqBP17y0k6sevrP3cBPWha4d0DtLk4B4nWwgPmWqOkvNSkIOubDikKJ-tBO0VNwu8AwddEsQmrjoO~cM-tMkVhVUxWBilf-XrPHxIijuIvuVCPzM4jKYb8ccHRx~bP257zbIfcKV2EW-8bBrCppU34PIwCI0TsXEAM0bInJVZQJEwRxby~H-Qsy9bASRYSbzkWmsZNfOxgno878yUukwX4ZqmZ-~Z8MT3O8uU1n1Um65QSeioS8gpbYsVVmWDf~qxpANpjT5pThAhvEN07HYUm4-OXZNKwCcQsaVpl6nNZMUKeD~eCyr0oT53xucmXsD3dA__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 94940492
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00004.parquet.tmp'
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/9aad1e60b300b8fd296747f12a63bd6e3ae20b265066b26f5842af80c4d2c61a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120807Z&X-Amz-Expires=3600&X-Amz-Signature=e18baf180c25274ad09ce1224f68e14f176294b287d863ffc5b4e4a3c6c0d594&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00001.parquet%3B+filename%3D%22shard_00001.parquet%22%3B&x-id=GetObject&Expires=1763125687&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvOWFhZDFlNjBiMzAwYjhmZDI5Njc0N2YxMmE2M2JkNmUzYWUyMGIyNjUwNjZiMjZmNTg0MmFmODBjNGQyYzYxYSoifV19&Signature=NtDUOg9YJCCBRlkIa2Nt6FVuh1mtUh9iPljF4boFkyK82F1hJdUSDwBuflUvclkW~9I2FjPk6FzaMh1PN3hqYzPq7EMM8IDZgGW30B-6OMOsiRDEYrJuJA9B4owEkiMYgZ0MmdhgAvlxx7yrPDp2I3FKicgq4thZX-U820DbdJAS5~1CSGXxIAL43QYP5AvkV0dIggVXkjWmpXEwowoE1If5aF9QA3IvrX-P061zUXMH3CBpy4P-bJuBOhuHMum7-cjr~eZif7HjAE6PZEafWDWcuoPJOGreUYipApZelIw3d-A784QvV7ojw73Mge~irbc1lr3fm0sCY-QExd4zVA__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 94233382
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00001.parquet.tmp'
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/701a4ef8278938f7d30dbc52a7dd4470b4e9eaec510d82754c132bce4413c7bd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120807Z&X-Amz-Expires=3600&X-Amz-Signature=da98369338613ed0fb59e1c7dbfa1d1921cffb4cc12134c89afb6281a91b4cb5&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00003.parquet%3B+filename%3D%22shard_00003.parquet%22%3B&x-id=GetObject&Expires=1763125687&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvNzAxYTRlZjgyNzg5MzhmN2QzMGRiYzUyYTdkZDQ0NzBiNGU5ZWFlYzUxMGQ4Mjc1NGMxMzJiY2U0NDEzYzdiZCoifV19&Signature=oFW7xxlQPa5yvD6fPegUBj9ghAeSDUR6D8iuVKb~svOATQmAji1NPFA6HboDrpcntCiddq344de8VtAMwSgd2OUdzFwfIFCJZaU0pbWdLk6nL5EWBk9ezDORz1E8QnY3kLmPeB8k2oC0bmshv73cTf-aaC8qHk3Wofxf7XohWDLu9wnDYHx7NornYfVdkn6AxANtWS-eW9WsIB9HrwxUnkz~ViiJPHei6n8R1C2~fuK51IxVh-jxIdERiA621OsenR69U~vztuBcpbBKUvik0Lht6-qU9jZLktZ3vMMK1t3HFz2B0lzzcSzPPvrwrwl9LXx5DjeAKP964kQccwZNbg__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 93774109
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00003.parquet.tmp'
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/c0d83e3842f834f16bd47b38815b79a9235b91adffb0a970b0d554197eb2c4d0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120807Z&X-Amz-Expires=3600&X-Amz-Signature=adc970227433d42da33e228163d9993172774068c8ca7dc25cbbabe093c728aa&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00002.parquet%3B+filename%3D%22shard_00002.parquet%22%3B&x-id=GetObject&Expires=1763125687&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvYzBkODNlMzg0MmY4MzRmMTZiZDQ3YjM4ODE1Yjc5YTkyMzViOTFhZGZmYjBhOTcwYjBkNTU0MTk3ZWIyYzRkMCoifV19&Signature=eQYbxiQ3ZznEQm5Dtjr4Hu7MyvW~PKIAYG-fokKnKMhedkXG0XR~erFpiuSrN8q-Pkz4K9-LSQ5RxIZZmekdVC3ymXeeMTfLw-YzuuQpL9x9qv1Mpq1qVtPTlVSS0fyx1nBgvYLLeXvpeEAcXFWXx14N-an5sEKbUYgUMMm5C-2CPoCzReHA1DcAD~SyL7iiz7MIM-W-W-3Rj00EFkza93KoZmYhoPdIsaYf0l1woIrULWgI8grEaNkDGmgUZgQLak7pM8SO5Cf8ZMfluT5k8MJNT3SyYCpWqMeSTBsTwRSda8bjMsaAwnHSulm9MpGeS1FjgA4b0sT7ifn3r4BW-g__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 93549094
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00002.parquet.tmp'
+🟦 ダウンロード完了 index=3
+🟦 シャードのダウンロードを開始 index=5
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00005.parquet'
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00005.parquet'
+🟦 ダウンロード試行 1/5 index=5
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 ダウンロード完了 index=2
+🟦 シャードのダウンロードを開始 index=6
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00006.parquet'
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00006.parquet'
+🟦 ダウンロード試行 1/5 index=6
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 ダウンロード完了 index=4
+🟦 シャードのダウンロードを開始 index=7
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00007.parquet'
+🟦 ダウンロードURL url='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00007.parquet'
+🟦 ダウンロード試行 1/5 index=7
+🟦 Starting new HTTPS connection (1): huggingface.co:443
+🟦 ダウンロード完了 index=1
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00005.parquet HTTP/1.1" 302 1323
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/6a876e8629e976fbced65cb6a0e01016242c866fc7f191a8df22a66f3bfe7b7b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120808Z&X-Amz-Expires=3600&X-Amz-Signature=a65ee9744b5fa394940d26b3060de5274df4bbca61f97d7f940b1b650875661c&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00005.parquet%3B+filename%3D%22shard_00005.parquet%22%3B&x-id=GetObject&Expires=1763125688&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvNmE4NzZlODYyOWU5NzZmYmNlZDY1Y2I2YTBlMDEwMTYyNDJjODY2ZmM3ZjE5MWE4ZGYyMmE2NmYzYmZlN2I3YioifV19&Signature=mRlGmTC~4~YMcvOaAk1Inv4yiopXeAi4HQMVcl0qVJMciE12Z2EB4OCuHCi0djSbnUz2JKEFXBXIpF7viKFIPM~Gn9gfvQ2engUmQqJWl9GT2fchvgrKOhxCXiQsJ6Fi30jaeWLe408ivnTg3w-eDyyiwqiAnwsLzqoTUMwXifXvls0sIpQJ6ZZUvUDEWoz0CzfBNg92lXGcLYNaSDQyIqqvjO9vUEVSdNl3RjlVBAQU5uAKasluNNQ516U4eSw1CKG918QjhtBzEDFQSzt9vV3FdI9ym2rBijr0qMk7Eltpw6zYkiLB~KGNR12uBwUOcUZsTrTlcxaCH7T836T34w__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 93623778
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00005.parquet.tmp'
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00006.parquet HTTP/1.1" 302 1325
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/56a5a2d10dc3151db9f5cad05a242c41d538df41b02afe7f979a7eee5dc818ef?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120808Z&X-Amz-Expires=3600&X-Amz-Signature=d51e26c4011e85bb9ab46315a1688ade6155e6c3378652d056dbebcc25cbe4dd&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00006.parquet%3B+filename%3D%22shard_00006.parquet%22%3B&x-id=GetObject&Expires=1763125688&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvNTZhNWEyZDEwZGMzMTUxZGI5ZjVjYWQwNWEyNDJjNDFkNTM4ZGY0MWIwMmFmZTdmOTc5YTdlZWU1ZGM4MThlZioifV19&Signature=rKpVR8DXkN1YgZUeNf87V7xOlLVKOqh59rMpy7e8bz~QN-S1Vk44DhhH4jlpLtXvpiVBE6W3bl46acDUWqR5lSqqzUNDa883zde2vJaJF8HijBDCWorCK2eYNwjW6c2OZFNrY3ut8XPOq3cWHOzb3s4Flf~wfuDNd3aaNp8lryxHJpAEWuQo9b8sxsX~ofEwUfUNU66ctr5IQJfmlTtdrThJ2NYzUTQFmpiTujTR-BVf8Ei29beKPyZGlegJpBabA07jGQRd0J5dcpNcfR6AdB68ZPrNe~RqKAM0iZafoC9fcss2Oeg-Tsjz6NvUUuuS~AZAG8LImqGGJRxgdatsjQ__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 93479271
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00006.parquet.tmp'
+🟦 https://huggingface.co:443 "GET /datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main/shard_00007.parquet HTTP/1.1" 302 1321
+🟦 Starting new HTTPS connection (1): cas-bridge.xethub.hf.co:443
+🟦 https://cas-bridge.xethub.hf.co:443 "GET /xet-bridge-us/68d51eeacf1d80834c0dd71c/009de8c7da52af0c0a6b6b8e47be1b69fcdb80f2bff1c9e85595e97b3aa5a491?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251114T120808Z&X-Amz-Expires=3600&X-Amz-Signature=ffd5be25ab2a56a0c39a1dc0d416cf4452beaa5285f67bd560fb48ff3075e1d7&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27shard_00007.parquet%3B+filename%3D%22shard_00007.parquet%22%3B&x-id=GetObject&Expires=1763125688&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MzEyNTY4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OGQ1MWVlYWNmMWQ4MDgzNGMwZGQ3MWMvMDA5ZGU4YzdkYTUyYWYwYzBhNmI2YjhlNDdiZTFiNjlmY2RiODBmMmJmZjFjOWU4NTU5NWU5N2IzYWE1YTQ5MSoifV19&Signature=Etg4iPHNzKyslknw1ywDO-BF2aftSzVdIznUh80EmIsh1vafTuFMgWaaeSDCVVEcto7YmOHGL8Hqns9tKbusXkj6YqQYN0X7UrQFPjtRT7r7UNSzK3T9uNOoLlNO9EDB-FLOPyOcykVTtqFsIPqEkWApwa3DkPlv65h1sb3MfwvhGES8oEyqLiDRR0o9LlmCjTW-nMMCZ55beZmhigmdMeJUzcegIg8NyTbIAH~Hgnbot~5rRUkpMw7R46W45frslQSDDB68xTItzOv~RMZC0-vhfvuCdfdB3vE8-izN0ENv6KlwGx4OyeL06Y3N3yn6U9vKFZMeJ7dRxPouyQDxkw__&Key-Pair-Id=K2L8F4GPSG1IFC HTTP/1.1" 200 93672088
+🟦 一時ファイルに書き込み temp_path='/root/.cache/nanochat/base_data/shard_00007.parquet.tmp'
+🟦 ダウンロード完了 index=5
+🟦 ダウンロード完了 index=7
+🟦 ダウンロード完了 index=6
+🟦 並列ダウンロード完了 success_rate=1.0
+🟦 特殊トークン数 len(SPECIAL_TOKENS)=9
+🟦 事前トークン化の正規表現: SPLIT_PATTERN="'(?i:[sdmt]|ll|ve|re)|[^\\r\\n\\p{L}\\p{N}]?+\\p{L}+|\\p{N}{1,2}| ?[^\\s\\p{L}\\p{N}]++[\\r\\n]*|\\s*[\\r\\n]|\\s+(?!\\S)|\\s+"
+🟩 トークナイザーの訓練に使用する最大文字数: max_chars=2,000,000,000
+🟩 1ドキュメントあたりの最大文字数: doc_cap=10,000
+🟩 トークナイザーの語彙数: vocab_size=65,536
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 ドキュメントからテキストを取得 len(doc_text)=8,657
+🟦 累積文字数を更新 nchars=8657
+🟦 トークナイザーの保存ディレクトリ: /root/.cache/nanochat/tokenizer
+🟦 トークナイザーの訓練を開始
+🟦 トークナイザーの訓練完了 train_time=65.88940763473511秒
+🟦 トークナイザーの保存開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 トークナイザーの保存完了 pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 エンコード開始 len(text)=127 prepend=None append=None num_threads=8
+🟦 エンコード完了 len(ids)=66
+🟦 デコード開始 len(ids)=66
+🟦 デコード完了 len(res)=127
+🟦 トークナイザーの語彙数: vocab_size=65536
+🟦 特殊トークン数: len(special_set)=9
+🟦 早見表の保存パス: token_bytes_path='/root/.cache/nanochat/tokenizer/token_bytes.pt'
+🟦 トークンあたりの最小バイト数 1
+🟦 トークンあたりの最大バイト数 32
+🟦 トークンあたりのバイト数の平均 6.919697284698486
+🟦 トークンあたりのバイト数の標準偏差 2.8748462200164795
+🟦 デコード開始 len(ids)=1
+🟦 デコード完了 len(res)=2
+🟦 Token ID: 5000, Token: 'CC', Bytes: 2
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 データセットを読み込み開始 split='val' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00007.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=4,278
+🟦 分散データローダーを初期化 B=4 T=2048 split='train' tokenizer_threads=4 tokenizer_batch_size=128 device='cuda'
+🟦 needed_tokens=8193
+🟦 RustBPETokenizerをディレクトリから読み込み開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 RustBPETokenizerをディレクトリから読み込み完了 enc=<Encoding 'rustbpe'>
+🟦 RustBPETokenizer初期化開始 enc=<Encoding 'rustbpe'> bos_token='<|bos|>'
+🟦 RustBPETokenizer初期化完了 self.bos_token_id=65527
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 エンコード開始 len(text)=128 prepend=65527 append=None num_threads=4
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=128
+🟦 データローダーの最初のバッチを取得 first_batch[0].shape=torch.Size([4, 2048]) first_batch[1].shape=torch.Size([4, 2048])
+🟦 実行デバイス: cuda
+🟦 ワールドサイズ ddp_world_size=1
+🟦 マスタープロセス master_process=True ddp_rank=0
+🟦 自動混合精度を有効化 True
+🟦 CUDAの操作を同期する True
+🟦 最大VRAM使用量を取得する True
+🟦 WandBを使用する False
+🟦 RustBPETokenizerをディレクトリから読み込み開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 RustBPETokenizerをディレクトリから読み込み完了 enc=<Encoding 'rustbpe'>
+🟦 RustBPETokenizer初期化開始 enc=<Encoding 'rustbpe'> bos_token='<|bos|>'
+🟦 RustBPETokenizer初期化完了 self.bos_token_id=65527
+🟦 使用するトークナイザー RustBPETokenizer
+🟦 語彙数 vocab_size=65536
+🟦 モデル設定 num_layers=20 model_dim=1280 num_heads=10 num_kv_heads=10
+🟦 最適化設定 device_batch_size=4 tokens_per_fwdbwd=8192 world_tokens_per_fwdbwd=8192 total_batch_size=524288 grad_accum_steps=64
+🟦 GPTモデルを初期化 config.n_layer=20 config.n_head=10 config.n_embd=1280 config.vocab_size=65536 config.sequence_len=2048
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=0
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=0
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=1
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=1
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=2
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=2
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=3
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=3
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=4
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=4
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=5
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=5
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=6
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=6
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=7
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=7
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=8
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=8
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=9
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=9
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=10
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=10
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=11
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=11
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=12
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=12
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=13
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=13
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=14
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=14
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=15
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=15
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=16
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=16
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=17
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=17
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=18
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=18
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=19
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=19
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 self.rotary_seq_len=20480
+🟦 head_dim=128
+🟦 RoPEの事前計算を実行 seq_len=20480 head_dim=128 base=10000
+🟦 inv_freq.shape=torch.Size([64])
+🟦 t.shape=torch.Size([20480])
+🟦 freqs.shape=torch.Size([20480, 64])
+🟦 RoPEの事前計算完了 cos.shape=torch.Size([1, 20480, 1, 64]) sin.shape=torch.Size([1, 20480, 1, 64])
+🟦 GPTモデルの初期化完了
+🟦 GPTモデルの重みを初期化開始
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Embedding'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='ModuleList'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='ModuleDict'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='GPT'
+🟦 モジュールの重みの初期化完了
+🟦 RoPEの事前計算を実行 seq_len=20480 head_dim=128 base=10000
+🟦 inv_freq.shape=torch.Size([64])
+🟦 t.shape=torch.Size([20480])
+🟦 freqs.shape=torch.Size([20480, 64])
+🟦 RoPEの事前計算完了 cos.shape=torch.Size([1, 20480, 1, 64]) sin.shape=torch.Size([1, 20480, 1, 64])
+🟦 GPTモデルの重みの初期化完了
+🟦 モデルのFLOPsを推定開始
+🟦 nparams=560,988,160
+🟦 nparams_embedding=83,886,080
+🟦 l=20, h=10, q=128, t=2048
+🟦 モデルのFLOPsの推定完了 num_flops_per_token=3,491,758,080
+🟦 モデルの初期化完了 num_params=560,988,160 num_flops_per_token=3,491,758,080
+🟦 target_tokens=11,219,763,200
+🟦 Chinchillaのスケーリング則から計算された訓練ステップ数 num_iterations=21,400
+🟦 総訓練トークン数を計算 total_tokens=11,219,763,200
+🟦 Chinchillaの比率 20.00 tokens per param
+🟦 訓練の推定総計算量 num_flops_per_token * total_tokens=3.917670e+19
+🟦 最適化関数を設定開始 unembedding_lr=0.004 embedding_lr=0.2 matrix_lr=0.02 weight_decay=0.0
+🟦 len(matrix_params)=120
+🟦 Scaling the LR for the AdamW parameters ∝1/√(1280/768) = 0.774597
+🟦 最適化関数の設定完了
+🟦 分散データローダーを初期化 B=4 T=2048 split='train' tokenizer_threads=4 tokenizer_batch_size=128 device=device(type='cuda')
+🟦 needed_tokens=8193
+🟦 RustBPETokenizerをディレクトリから読み込み開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 RustBPETokenizerをディレクトリから読み込み完了 enc=<Encoding 'rustbpe'>
+🟦 RustBPETokenizer初期化開始 enc=<Encoding 'rustbpe'> bos_token='<|bos|>'
+🟦 RustBPETokenizer初期化完了 self.bos_token_id=65527
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 エンコード開始 len(text)=128 prepend=65527 append=None num_threads=4
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=128
+🟩 NumExpr defaulting to 12 threads.
+🟦 評価バンドルをダウンロード中 https://karpathy-public.s3.us-west-2.amazonaws.com/eval_bundle.zip...
+🟦 Starting new HTTPS connection (1): karpathy-public.s3.us-west-2.amazonaws.com:443
+🟦 https://karpathy-public.s3.us-west-2.amazonaws.com:443 "GET /eval_bundle.zip HTTP/1.1" 200 26060410
+🟦 評価バンドルのダウンロードと解凍が完了 /root/.cache/nanochat/eval_bundle
+🟦 エンコード開始 len(text)=4 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=4
+🟦 エンコード開始 len(text)=4 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=4
+🟦 エンコード開始 len(text)=2 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=2
+🟦 エンコード開始 len(text)=2 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=2
+🟩 ステップ数 step=00000 検証BPB val_bpb=3.3069
+🟩 step 00000/21400 (0.00%) | loss: 11.090357 | grad norm: 0.4246 | lrm: 1.00 | dt: 24374.53ms | tok/sec: 21,509 | mfu: 7.59 | total time: 0.00m
+🟩 step 00001/21400 (0.00%) | loss: 10.810230 | grad norm: 10.9820 | lrm: 1.00 | dt: 11163.22ms | tok/sec: 46,965 | mfu: 16.58 | total time: 0.00m
+🟩 step 00002/21400 (0.01%) | loss: 10.231241 | grad norm: 5.7795 | lrm: 1.00 | dt: 11298.66ms | tok/sec: 46,402 | mfu: 16.38 | total time: 0.00m
+🟩 step 00003/21400 (0.01%) | loss: 9.484886 | grad norm: 4.2436 | lrm: 1.00 | dt: 11327.78ms | tok/sec: 46,283 | mfu: 16.34 | total time: 0.00m
+🟩 step 00004/21400 (0.02%) | loss: 8.916585 | grad norm: 8.3013 | lrm: 1.00 | dt: 11340.22ms | tok/sec: 46,232 | mfu: 16.32 | total time: 0.00m
+🟩 step 00005/21400 (0.02%) | loss: 8.529706 | grad norm: 5.3741 | lrm: 1.00 | dt: 11338.88ms | tok/sec: 46,238 | mfu: 16.32 | total time: 0.00m
+🟩 step 00006/21400 (0.03%) | loss: 8.262937 | grad norm: 4.4140 | lrm: 1.00 | dt: 11550.08ms | tok/sec: 45,392 | mfu: 16.03 | total time: 0.00m
+🟩 step 00007/21400 (0.03%) | loss: 7.995448 | grad norm: 4.5626 | lrm: 1.00 | dt: 11354.05ms | tok/sec: 46,176 | mfu: 16.30 | total time: 0.00m
+🟩 step 00008/21400 (0.04%) | loss: 7.794034 | grad norm: 5.0659 | lrm: 1.00 | dt: 11357.76ms | tok/sec: 46,161 | mfu: 16.30 | total time: 0.00m
+🟩 step 00009/21400 (0.04%) | loss: 7.616665 | grad norm: 2.2696 | lrm: 1.00 | dt: 11361.10ms | tok/sec: 46,147 | mfu: 16.29 | total time: 0.00m
+🟩 ステップ数 step=00010 検証BPB val_bpb=1.9917
+🟩 Evaluating: hellaswag_zeroshot (0-shot, type: multiple_choice)... 
+🟩 accuracy: 0.2200 | centered: -0.0400 | time: 13.79s
+🟩 Evaluating: jeopardy (10-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 13.80s
+🟩 Evaluating: bigbench_qa_wikidata (10-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 13.19s
+🟩 Evaluating: arc_easy (10-shot, type: multiple_choice)... 
+🟩 accuracy: 0.2640 | centered: 0.0187 | time: 15.17s
+🟩 Evaluating: arc_challenge (10-shot, type: multiple_choice)... 
+🟩 accuracy: 0.2280 | centered: -0.0293 | time: 15.51s
+🟩 Evaluating: copa (0-shot, type: multiple_choice)... 
+🟩 accuracy: 0.5100 | centered: 0.0200 | time: 2.65s
+🟩 Evaluating: commonsense_qa (10-shot, type: multiple_choice)... 
+🟩 accuracy: 0.1700 | centered: -0.0375 | time: 15.69s
+🟩 Evaluating: piqa (10-shot, type: multiple_choice)... 
+🟩 accuracy: 0.4860 | centered: -0.0280 | time: 14.08s
+🟩 Evaluating: openbook_qa (0-shot, type: multiple_choice)... 
+🟩 accuracy: 0.2260 | centered: -0.0320 | time: 13.00s
+🟩 Evaluating: lambada_openai (0-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 13.03s
+🟩 Evaluating: hellaswag (10-shot, type: multiple_choice)... 
+🟩 accuracy: 0.2100 | centered: -0.0533 | time: 25.08s
+🟩 Evaluating: winograd (0-shot, type: schema)... 
+🟩 accuracy: 0.4982 | centered: -0.0037 | time: 7.07s
+🟩 Evaluating: winogrande (0-shot, type: schema)... 
+🟩 accuracy: 0.5060 | centered: 0.0120 | time: 12.86s
+🟩 Evaluating: bigbench_dyck_languages (10-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 14.06s
+🟩 Evaluating: agi_eval_lsat_ar (3-shot, type: multiple_choice)... 
+🟩 accuracy: 0.2261 | centered: 0.0326 | time: 11.08s
+🟩 Evaluating: bigbench_cs_algorithms (10-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 14.28s
+🟩 Evaluating: bigbench_operators (10-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 5.93s
+🟩 Evaluating: bigbench_repeat_copy_logic (10-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 0.90s
+🟩 Evaluating: squad (10-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 17.17s
+🟩 Evaluating: coqa (0-shot, type: language_modeling)... 
+🟩 accuracy: 0.0000 | centered: 0.0000 | time: 14.10s
+🟩 Evaluating: boolq (10-shot, type: multiple_choice)... 
+🟩 accuracy: 0.3720 | centered: -0.6526 | time: 23.63s
+🟩 Evaluating: bigbench_language_identification (10-shot, type: multiple_choice)... 
+🟩 accuracy: 0.2380 | centered: 0.1617 | time: 39.70s
+🟩 ステップ数 step=00010 | COREメトリック -0.0287
+🟩 step 00010/21400 (0.05%) | loss: 7.486530 | grad norm: 2.7159 | lrm: 1.00 | dt: 11325.50ms | tok/sec: 46,292 | mfu: 16.34 | total time: 0.00m
+🟩 step 00011/21400 (0.05%) | loss: 7.357046 | grad norm: 1.7246 | lrm: 1.00 | dt: 11518.95ms | tok/sec: 45,515 | mfu: 16.07 | total time: 0.19m
+🟩 step 00012/21400 (0.06%) | loss: 7.293429 | grad norm: 2.2167 | lrm: 1.00 | dt: 11351.38ms | tok/sec: 46,187 | mfu: 16.31 | total time: 0.38m
+🟩 step 00013/21400 (0.06%) | loss: 7.186176 | grad norm: 2.3061 | lrm: 1.00 | dt: 11356.89ms | tok/sec: 46,164 | mfu: 16.30 | total time: 0.57m
+🟩 step 00014/21400 (0.07%) | loss: 7.094932 | grad norm: 3.0241 | lrm: 1.00 | dt: 11356.81ms | tok/sec: 46,165 | mfu: 16.30 | total time: 0.76m
+🟩 step 00015/21400 (0.07%) | loss: 7.033576 | grad norm: 1.2138 | lrm: 1.00 | dt: 11365.05ms | tok/sec: 46,131 | mfu: 16.29 | total time: 0.95m
+🟩 step 00016/21400 (0.07%) | loss: 6.957317 | grad norm: 0.9587 | lrm: 1.00 | dt: 11368.18ms | tok/sec: 46,118 | mfu: 16.28 | total time: 1.14m
+🟩 step 00017/21400 (0.08%) | loss: 6.879604 | grad norm: 1.0407 | lrm: 1.00 | dt: 11365.56ms | tok/sec: 46,129 | mfu: 16.29 | total time: 1.33m
+🟩 step 00018/21400 (0.08%) | loss: 6.831496 | grad norm: 0.8775 | lrm: 1.00 | dt: 11510.07ms | tok/sec: 45,550 | mfu: 16.08 | total time: 1.52m
+🟩 step 00019/21400 (0.09%) | loss: 6.783063 | grad norm: 1.5631 | lrm: 1.00 | dt: 11367.31ms | tok/sec: 46,122 | mfu: 16.28 | total time: 1.71m

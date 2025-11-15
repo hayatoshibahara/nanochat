@@ -1,0 +1,694 @@
+🟦 ログを初期化
+🟦 ベースディレクトリ: /root/.cache/nanochat
+🟦 データセットURL BASE_URL='https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/main'
+🟦 データセットの最大シャードインデックス MAX_SHARD=1822
+🟦 ダウンロードするシャード数 num_files=8
+🟦 ダウンロードに使用するワーカー数 num_workers=4
+🟦 データセット保存ディレクトリ DATA_DIR='/root/.cache/nanochat/base_data'
+🟦 シャードのダウンロードを開始 index=0
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet'
+🟦 ダウンロード済みのためスキップ index=0
+🟦 ダウンロードするシャードインデックス: ids_to_download=[0, 1, 2, 3, 4, 5, 6, 7]
+🟦 シャードのダウンロードを開始 index=2
+🟦 シャードのダウンロードを開始 index=1
+🟦 シャードのダウンロードを開始 index=0
+🟦 シャードのダウンロードを開始 index=3
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00001.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00002.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00003.parquet'
+🟦 ダウンロード済みのためスキップ index=0
+🟦 ダウンロード済みのためスキップ index=2
+🟦 ダウンロード済みのためスキップ index=1
+🟦 ダウンロード済みのためスキップ index=3
+🟦 シャードのダウンロードを開始 index=4
+🟦 シャードのダウンロードを開始 index=5
+🟦 シャードのダウンロードを開始 index=6
+🟦 シャードのダウンロードを開始 index=7
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00004.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00006.parquet'
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00005.parquet'
+🟦 ダウンロード済みのためスキップ index=4
+🟦 保存先 filepath='/root/.cache/nanochat/base_data/shard_00007.parquet'
+🟦 ダウンロード済みのためスキップ index=5
+🟦 ダウンロード済みのためスキップ index=7
+🟦 ダウンロード済みのためスキップ index=6
+🟦 並列ダウンロード完了 success_rate=1.0
+🟦 特殊トークン数 len(SPECIAL_TOKENS)=9
+🟦 事前トークン化の正規表現: SPLIT_PATTERN="'(?i:[sdmt]|ll|ve|re)|[^\\r\\n\\p{L}\\p{N}]?+\\p{L}+|\\p{N}{1,2}| ?[^\\s\\p{L}\\p{N}]++[\\r\\n]*|\\s*[\\r\\n]|\\s+(?!\\S)|\\s+"
+🟩 トークナイザーの訓練に使用する最大文字数: max_chars=2,000,000,000
+🟩 1ドキュメントあたりの最大文字数: doc_cap=10,000
+🟩 トークナイザーの語彙数: vocab_size=65,536
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 ドキュメントからテキストを取得 len(doc_text)=8,657
+🟦 累積文字数を更新 nchars=8657
+🟦 トークナイザーの保存ディレクトリ: /root/.cache/nanochat/tokenizer
+🟦 既存のトークナイザーを読み込み
+🟦 RustBPETokenizerをディレクトリから読み込み開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 RustBPETokenizerをディレクトリから読み込み完了 enc=<Encoding 'rustbpe'>
+🟦 RustBPETokenizer初期化開始 enc=<Encoding 'rustbpe'> bos_token='<|bos|>'
+🟦 RustBPETokenizer初期化完了 self.bos_token_id=65527
+🟦 エンコード開始 len(text)=127 prepend=None append=None num_threads=8
+🟦 エンコード完了 len(ids)=66
+🟦 デコード開始 len(ids)=66
+🟦 デコード完了 len(res)=127
+🟦 トークナイザーの語彙数: vocab_size=65536
+🟦 特殊トークン数: len(special_set)=9
+🟦 早見表の保存パス: token_bytes_path='/root/.cache/nanochat/tokenizer/token_bytes.pt'
+🟦 トークンあたりの最小バイト数 1
+🟦 トークンあたりの最大バイト数 32
+🟦 トークンあたりのバイト数の平均 6.919697284698486
+🟦 トークンあたりのバイト数の標準偏差 2.8748462200164795
+🟦 デコード開始 len(ids)=1
+🟦 デコード完了 len(res)=2
+🟦 Token ID: 5000, Token: 'CC', Bytes: 2
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 データセットを読み込み開始 split='val' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00007.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=4,278
+🟦 分散データローダーを初期化 B=4 T=2048 split='train' tokenizer_threads=4 tokenizer_batch_size=128 device='cuda'
+🟦 needed_tokens=8193
+🟦 RustBPETokenizerをディレクトリから読み込み開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 RustBPETokenizerをディレクトリから読み込み完了 enc=<Encoding 'rustbpe'>
+🟦 RustBPETokenizer初期化開始 enc=<Encoding 'rustbpe'> bos_token='<|bos|>'
+🟦 RustBPETokenizer初期化完了 self.bos_token_id=65527
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 エンコード開始 len(text)=128 prepend=65527 append=None num_threads=4
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=128
+🟦 データローダーの最初のバッチを取得 first_batch[0].shape=torch.Size([4, 2048]) first_batch[1].shape=torch.Size([4, 2048])
+🟦 実行デバイス: cuda
+🟦 ワールドサイズ ddp_world_size=1
+🟦 マスタープロセス master_process=True ddp_rank=0
+🟦 自動混合精度を有効化 True
+🟦 CUDAの操作を同期する True
+🟦 最大VRAM使用量を取得する True
+🟦 WandBを使用する False
+🟦 RustBPETokenizerをディレクトリから読み込み開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 RustBPETokenizerをディレクトリから読み込み完了 enc=<Encoding 'rustbpe'>
+🟦 RustBPETokenizer初期化開始 enc=<Encoding 'rustbpe'> bos_token='<|bos|>'
+🟦 RustBPETokenizer初期化完了 self.bos_token_id=65527
+🟦 使用するトークナイザー RustBPETokenizer
+🟦 語彙数 vocab_size=65536
+🟦 モデル設定 num_layers=20 model_dim=1280 num_heads=10 num_kv_heads=10
+🟦 最適化設定 device_batch_size=1 tokens_per_fwdbwd=2048 world_tokens_per_fwdbwd=2048 total_batch_size=524288 grad_accum_steps=256
+🟦 GPTモデルを初期化 config.n_layer=20 config.n_head=10 config.n_embd=1280 config.vocab_size=65536 config.sequence_len=2048
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=0
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=0
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=1
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=1
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=2
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=2
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=3
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=3
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=4
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=4
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=5
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=5
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=6
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=6
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=7
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=7
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=8
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=8
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=9
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=9
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=10
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=10
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=11
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=11
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=12
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=12
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=13
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=13
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=14
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=14
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=15
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=15
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=16
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=16
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=17
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=17
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=18
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=18
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 Transformer Blockを初期化 config.n_embd=1280 layer_idx=19
+🟦 CausalSelfAttentionを初期化開始 config.n_head=10 config.n_kv_head=10 config.n_embd=1280 layer_idx=19
+🟦 self.head_dim=128
+🟦 CausalSelfAttentionの初期化完了
+🟦 MLPを初期化 config.n_embd=1280
+🟦 MLPの初期化完了
+🟦 Transformer Blockの初期化完了
+🟦 self.rotary_seq_len=20480
+🟦 head_dim=128
+🟦 RoPEの事前計算を実行 seq_len=20480 head_dim=128 base=10000
+🟦 inv_freq.shape=torch.Size([64])
+🟦 t.shape=torch.Size([20480])
+🟦 freqs.shape=torch.Size([20480, 64])
+🟦 RoPEの事前計算完了 cos.shape=torch.Size([1, 20480, 1, 64]) sin.shape=torch.Size([1, 20480, 1, 64])
+🟦 GPTモデルの初期化完了
+🟦 GPTモデルの重みを初期化開始
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Embedding'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='CausalSelfAttention'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='MLP'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Block'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='ModuleList'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='ModuleDict'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='Linear'
+🟦 モジュールの重みの初期化完了
+🟦 モジュールの重みを初期化開始 module.__class__.__name__='GPT'
+🟦 モジュールの重みの初期化完了
+🟦 RoPEの事前計算を実行 seq_len=20480 head_dim=128 base=10000
+🟦 inv_freq.shape=torch.Size([64])
+🟦 t.shape=torch.Size([20480])
+🟦 freqs.shape=torch.Size([20480, 64])
+🟦 RoPEの事前計算完了 cos.shape=torch.Size([1, 20480, 1, 64]) sin.shape=torch.Size([1, 20480, 1, 64])
+🟦 GPTモデルの重みの初期化完了
+🟦 モデルのFLOPsを推定開始
+🟦 nparams=560,988,160
+🟦 nparams_embedding=83,886,080
+🟦 l=20, h=10, q=128, t=2048
+🟦 モデルのFLOPsの推定完了 num_flops_per_token=3,491,758,080
+🟦 モデルの初期化完了 num_params=560,988,160 num_flops_per_token=3,491,758,080
+🟦 target_tokens=11,219,763,200
+🟦 Chinchillaのスケーリング則から計算された訓練ステップ数 num_iterations=21,400
+🟦 総訓練トークン数を計算 total_tokens=11,219,763,200
+🟦 Chinchillaの比率 20.00 tokens per param
+🟦 訓練の推定総計算量 num_flops_per_token * total_tokens=3.917670e+19
+🟦 最適化関数を設定開始 unembedding_lr=0.004 embedding_lr=0.2 matrix_lr=0.02 weight_decay=0.0
+🟦 len(matrix_params)=120
+🟦 Scaling the LR for the AdamW parameters ∝1/√(1280/768) = 0.774597
+🟦 最適化関数の設定完了
+🟦 分散データローダーを初期化 B=1 T=2048 split='train' tokenizer_threads=4 tokenizer_batch_size=128 device=device(type='cuda')
+🟦 needed_tokens=2049
+🟦 RustBPETokenizerをディレクトリから読み込み開始 tokenizer_dir='/root/.cache/nanochat/tokenizer'
+🟦 トークナイザーファイルパス pickle_path='/root/.cache/nanochat/tokenizer/tokenizer.pkl'
+🟦 RustBPETokenizerをディレクトリから読み込み完了 enc=<Encoding 'rustbpe'>
+🟦 RustBPETokenizer初期化開始 enc=<Encoding 'rustbpe'> bos_token='<|bos|>'
+🟦 RustBPETokenizer初期化完了 self.bos_token_id=65527
+🟦 データセットを読み込み開始 split='train' start=0 step=1
+🟦 全てのparquetファイル parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet', '/root/.cache/nanochat/base_data/shard_00007.parquet']
+🟦 使用するparquetファイル: parquet_paths=['/root/.cache/nanochat/base_data/shard_00000.parquet', '/root/.cache/nanochat/base_data/shard_00001.parquet', '/root/.cache/nanochat/base_data/shard_00002.parquet', '/root/.cache/nanochat/base_data/shard_00003.parquet', '/root/.cache/nanochat/base_data/shard_00004.parquet', '/root/.cache/nanochat/base_data/shard_00005.parquet', '/root/.cache/nanochat/base_data/shard_00006.parquet']
+🟦 filepath='/root/.cache/nanochat/base_data/shard_00000.parquet' pf.num_row_groups=52
+🟦 type(rg)=<class 'pyarrow.lib.Table'> len(rg)=1,024
+🟦 type(texts)=<class 'list'> len(texts)=1,024 len(texts[0])=8,657
+🟦 エンコード開始 len(text)=128 prepend=65527 append=None num_threads=4
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=128
+🟩 NumExpr defaulting to 2 threads.
+🟦 ダウンロード済みの評価バンドル ['core.yaml', 'openai-community-gpt2-large.csv', 'openai-community-gpt2-medium.csv', 'EVAL_GAUNTLET.md', 'openai-community-gpt2.csv', 'eval_data', 'openai-community-gpt2-xl.csv', 'eval_meta_data.csv']
+🟦 エンコード開始 len(text)=4 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=4
+🟦 エンコード開始 len(text)=4 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=4
+🟦 エンコード開始 len(text)=2 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=2
+🟦 エンコード開始 len(text)=2 prepend=65527 append=None num_threads=8
+🟦 prepend_id=65527
+🟦 エンコード完了 len(ids)=2
+🟩 ステップ数 step=00000 検証BPB val_bpb=3.3069
+🟩 step 00000/21400 (0.00%) | loss: 11.090357 | grad norm: 0.4288 | lrm: 1.00 | dt: 731331.11ms | tok/sec: 716 | mfu: 0.25 | total time: 0.00m
